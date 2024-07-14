@@ -12,10 +12,10 @@ app.use(express.static(path.join(__dirname, '../public')));
 mongoose.connect('mongodb://localhost:27017/mysecuredb', {
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+}); 
 
 const UserSchema = new mongoose.Schema({
-    username: String,
+    username: String, 
     password: String,
     role: String
 });
